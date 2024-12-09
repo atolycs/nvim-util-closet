@@ -3,7 +3,11 @@
   "runtime": {
     "version": "LuaJIT"
   },
+  "completion.autoRequire": false,
   "workspace": {
     "library": ["lua", "$VIMRUNTIME", "${3rd}/luv/library"]
+  },
+  "diagnostics": {
+    "globals": ["vim"]
   }
 }
