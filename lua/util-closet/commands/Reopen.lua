@@ -9,5 +9,9 @@ local command = {
   exec = "e ++enc=cp932",
 }
 
-vim.api.nvim_create_user_command(command.name, command.exec, { desc = command.description })
-return command
+return {
+  command,
+  register = function()
+    vim.api.nvim_create_user_command(command.name, command.exec, { desc = command.description })
+  end,
+}
