@@ -4,7 +4,7 @@ local logger = require("util-closet.lib.logs")
 
 function M.setup(opts)
   logger.info("Test!")
-  require("util-closet.commands.init")
+  require("util-closet.commands")
   -- vim.print(opts)
 end
 
