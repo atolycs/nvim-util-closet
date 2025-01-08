@@ -8,7 +8,7 @@ local M = {}
 local command = {
   name = "ReOpenFromJIS",
   description = "Reopen File to JIS encoding",
-  exec = "e ++enc=cp932",
+  exec = ":e ++enc=cp932",
 }
 
 function M.register()
