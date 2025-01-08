@@ -1,7 +1,3 @@
-local M = {}
-
-function M.setup()
+return function()
   require("util-closet.commands.Reopen").register()
 end
-
-return M
